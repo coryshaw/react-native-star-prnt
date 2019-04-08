@@ -360,6 +360,10 @@ export interface PrintCommand {
      * Data (Command) is added to the command buffer. Takes an array of bytes.
      * Example: {appendBytes:[0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x20, 0x57, 0x6f, 0x72, 0x6c, 0x64, 0x2e]}
      */
+    appendPdf417Data?: string;
+    /**
+     * PDF 417 Data is added to the command buffer. Takes an array of bytes.
+     */
     appendBytes?: Array<number>;
     /**
      * Data (Command) is added to the command buffer. Takes an array of bytes.

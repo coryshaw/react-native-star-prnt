@@ -469,6 +469,7 @@ public class RNStarPrntModule extends ReactContextBaseJavaModule {
             else if (command.hasKey("appendCodePage")) builder.appendCodePage(getCodePageType(command.getString("appendCodePage")));
             else if (command.hasKey("append")) builder.append(command.getString("append").getBytes(encoding));
             else if (command.hasKey("appendRaw")) builder.append(command.getString("appendRaw").getBytes(encoding));
+            else if (command.hasKey("appendPdf417Data")) builder.append(command.getString("appendPdf417Data").getBytes(encoding));
             else if (command.hasKey("appendEmphasis")) builder.appendEmphasis(command.getString("appendEmphasis").getBytes(encoding));
             else if (command.hasKey("enableEmphasis")) builder.appendEmphasis(command.getBoolean("enableEmphasis"));
             else if (command.hasKey("appendInvert")) builder.appendInvert(command.getString("appendInvert").getBytes(encoding));
